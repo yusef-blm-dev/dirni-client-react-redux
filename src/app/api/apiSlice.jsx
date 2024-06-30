@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://dirni-server-v2.onrender.com",
+  baseUrl: "https://dirni-server-v2.onrender.com/api",
   credentials: "include",
   prepareHeaders: async (headers, { getState }) => {
     const state = getState();
